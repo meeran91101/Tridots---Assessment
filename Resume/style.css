@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+body{
+    background-color:#edf1f7;
+}
+.container{
+    background-color:white;
+    margin:25px;
+    padding:5px;
+    border:1px solid gray;
+    font-weight:300;
+    
+}
+.header {
+    margin:10px;
+    padding:10px;
+    display:flex;
+    justify-content:space-between;
+    border-bottom:1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header1 h1{
+    font-family: "Roboto", sans-serif;
+}
+
+.header2 span{
+    font-weight:690;
+    
+
+}
+
+.header2 p{
+    padding:2px;
+    margin:2px;
+}
+.summary {
+    margin:5px;
+    padding:10px;
+    border-bottom:1px solid black
+}
+.summary h3{
+    text-align:center;
+    margin:5px;
+    padding:1px;
+}
+
+.summary p{
+    padding:3px;
+    text-align:center;
+    line-height:1.2;
+}
+
+.skills{
+    border-bottom:1px solid black;
+    display:flex;
+    padding:10px;
+    margin:7px;
+    justify-content:space-between;
+
+}
+.skills h2{
+    text-align:center;
+}
+.sec h3{
+    padding-bottom:6px;
+}
+.sec li{
+    margin-left:20px
+
+}
+.other{
+    border-bottom:1px solid black;
+    margin:7px;
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    
+    
+}
+
+.other div{
+    padding:5px;
+    
+}
+
+.border{
+    border-right:1px solid black;
+}
+.projects{
+    margin:7px;
+    padding:10px;
+    line-height:1.2;
+}
+
+.projects div{
+    padding:10px;
+}
+.projects p{
+    margin-left:20px
+}
+.bold{
+    font-weight:600;
+}
