@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+header {
+  background: #0a74da;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+.projects {
+  padding: 2rem;
+}
+.project {
+  background: white;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-left: 4px solid #0a74da;
+}
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+}
