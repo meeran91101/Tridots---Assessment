@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Management - Admission</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #4285f4;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .container {
+      display: flex;
+    }
+    .sidebar {
+      width: 220px;
+      background: #f1f1f1;
+      padding: 1rem;
+      border-right: 1px solid #ddd;
+      height: 100vh;
+    }
+    .sidebar nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar nav ul li {
+      margin: 10px 0;
+    }
+    .sidebar nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      display: block;
+      padding: 0.5rem;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .sidebar nav ul li a:hover {
+      background: #4285f4;
+      color: white;
+    }
+    main {
+      flex: 1;
+      padding: 2rem;
+    }
+    .dashboard h2 {
+      margin-bottom: 1rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    form input,
+    form select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    form button {
+      padding: 0.6rem 1.2rem;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #2c6bd1;
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🏫 School Management System</h1>
+  </header>
+  <div class="container">
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="index.html">🏠 Home</a></li>
+          <li><a href="settings.html">⚙️ Settings</a></li>
+          <li><a href="contact.html">📞 Contact</a></li>
+          <li><a href="services.html">🛠️ Services</a></li>
+          <li><a href="admission.html">🎓 Admission</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <section class="dashboard">
+        <h2>🎓 Student Admission</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>🧾 New Admission Form</h3>
+            <form>
+              <input type="text" placeholder="Full Name" required>
+              <input type="text" placeholder="Father's Name" required>
+              <input type="number" placeholder="Age" required>
+              <input type="text" placeholder="Class Applying For" required>
+              <input type="text" placeholder="Address" required>
+              <input type="email" placeholder="Email" required>
+              <input type="tel" placeholder="Phone Number" required>
+              <select required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+              <button type="submit">Submit Application</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer>
+    <p>&copy; 2025 School Management System</p>
+  </footer>
+</body>
+</html>

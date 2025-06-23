@@ -1,0 +1,124 @@
+@use "sass:color";
+
+$primary-color: #4a90e2;
+$bg-color: #f4f6f8;
+$text-color: #333;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+header {
+  background-color: $primary-color;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 30px;
+
+  section {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    h2 {
+      margin-bottom: 15px;
+      color: $primary-color;
+      font-size: 22px;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: 15px;
+        padding: 12px;
+        background: #f9f9f9;
+        border: 1px solid color.adjust($primary-color, $lightness: 30%);
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin-bottom: 15px;
+        font-weight: 500;
+
+        input, textarea {
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          font-size: 14px;
+        }
+      }
+
+      button {
+        width: 160px;
+        padding: 12px;
+        background: linear-gradient(to right, #4a90e2, #357abd);
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: linear-gradient(to right, #357abd, #4a90e2);
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 12px;
+  background: #ddd;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
