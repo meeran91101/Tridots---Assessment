@@ -2,30 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Meeran | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Navigation -->
   <header>
-    <h1>Hi, I'm Meeran 👋</h1>
-    <p>Frontend Developer | SASS & Tailwind Enthusiast</p>
+    <nav class="navbar">
+      <h1 class="logo">Portfolio</h1>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#academic">Academic</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificate">Certificate</a></li>
+        <li><a href="#personal">Personal Details</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>School Management System</h3>
-      <p>Built with Frappe, SASS, and modular layouts.</p>
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+  <div class="home-container">
+    <div class="photo-wrapper">
+      <img src="meeran.jpg" alt="Profile Photo" class="profile-photo" />
     </div>
-    <div class="project">
-      <h3>Food Delivery App</h3>
-      <p>Responsive UI with custom Tailwind animations and clean SASS architecture.</p>
+    <div class="summary">
+      <h2>Hello, I'm Meeran</h2>
+      <p>
+        I'm a passionate Python Full Stack Developer skilled in designing modular, scalable web applications. With expertise in Python, Django, HTML, CSS, JavaScript, and responsive UI frameworks like Tailwind CSS and SASS, I build seamless user experiences and robust backend systems.
+      </p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <p>Contact: <a href="mailto:meeran@example.com">meeran@example.com</a></p>
-  </footer>
+
+  <!-- Placeholder Sections -->
+  <section id="academic" class="academic-section">
+  <h2>Academic</h2>
+  <div class="academic-item">
+    <h3>Aditanar College of Arts and Science</h3>
+    <p>Degree Completed: 2021</p>
+    <p>CGPA: 8.02</p>
+  </div>
+
+  <div class="academic-item">
+    <h3>Central Higher Secondary School</h3>
+    <p>Class 12th – Percentage: 61%</p>
+    <p>Year of Passing: 2018</p>
+  </div>
+
+  <div class="academic-item">
+    <h3>Central Higher Secondary School</h3>
+    <p>Class 10th – Percentage: 76%</p>
+    <p>Year of Passing: 2016</p>
+  </div>
+</section>
+
+ <section id="skills" class="skills-section">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <h3>Front-End</h3>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>React JS</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h3>Frameworks & Libraries</h3>
+      <ul>
+        <li>Bootstrap</li>
+        <li>Tailwind CSS</li>
+        <li>SASS</li>
+        <li>Material UI</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <h3>Back-End</h3>
+      <ul>
+        <li>Python</li>
+        <li>Django</li>
+        <li>FastAPI</li>
+        <li>Frappe Framework</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+  <section id="certificate"><h2>Certificate</h2></section>
+  <section id="personal"><h2>Personal Details</h2></section>
+
 </body>
 </html>
