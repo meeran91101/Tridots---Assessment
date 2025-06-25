@@ -23,10 +23,10 @@
   </header>
 
   <!-- Home Section -->
-  <section id="home" class="home-section">
+  <section id="home" class="home-section animate-fade-slide">
   <div class="home-container">
     <div class="photo-wrapper">
-      <img src="meeran.jpg" alt="Profile Photo" class="profile-photo" />
+      <img src="meeran1.jpg" alt="Profile Photo" class="profile-photo" />
     </div>
     <div class="summary">
       <h2>Hello, I'm Meeran</h2>
@@ -95,8 +95,53 @@
 
   </div>
 </section>
-  <section id="certificate"><h2>Certificate</h2></section>
-  <section id="personal"><h2>Personal Details</h2></section>
+
+<section id="certificate" class="certificate-section">
+  <h2>Certificates</h2>
+  <div class="certificate-grid">
+    <div class="certificate-card">
+      <h3>Python Full Stack Development</h3>
+      <p>Completed degree in Python Full Stack covering frontend, backend, and deployment. Gained hands-on experience with Django, FastAPI, and modern JavaScript frameworks.</p>
+      <p><strong>Issued by:</strong> Login 360 - Velachery</p>
+      <p><strong>Date:</strong> May - 2025</p>
+    </div>
+  </div>
+</section>
+<section class="personal-section" id="personal">
+  <h2>Personal Details</h2>
+  <div class="personal-card">
+    <ul>
+      <li><strong>Name:</strong> Meeran Parvesh Musharaf</li>
+      <li><strong>Age:</strong> 24</li>
+      <li><strong>Date of Birth:</strong> 09/11/2001</li>
+      <li><strong>District:</strong> Tuticorin</li>
+      <li><strong>City:</strong> Kayalpatinam</li>
+      <li><strong>Pincode:</strong> 628204</li>
+      <li><strong>Country:</strong> India</li>
+      <li><strong>Gender:</strong> Male</li>
+    </ul>
+  </div>
+</section>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-academic");
+          observer.unobserve(entry.target); // Stop observing once animated
+        }
+      });
+    }, { threshold: 0.2 });
+
+    const academicSection = document.querySelector(".academic-section");
+    if (academicSection) {
+      observer.observe(academicSection);
+    }
+  });
+</script>
+<!-- <script src="script.js"></script> -->
 
 </body>
 </html>
